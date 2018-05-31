@@ -318,6 +318,6 @@ async def cmere(self, ctx):
 
 if __name__ == "__main__":
     try:
-        bot.run('NDM0MTUyNTkxMjg3NTE3MjE0.DbiDKQ.YN6HKWYq5-7FTSHDPJe7JTrFgwA')
+        bot.run('')
     except:
         pass
