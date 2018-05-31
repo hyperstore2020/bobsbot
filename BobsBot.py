@@ -7,7 +7,7 @@ from discord.ext import commands
 bot = commands.Bot(command_prefix='!', description='BobsBot PornHub Comments Boy By Juji')
 
 # load file into json and data define
-o = json.load(open('/comments.json','rb')) 
+o = json.load(open('http://modrepo.com/cgi-bin/comments.json','rb')) 
 data = [(m['username'],m['text']) for m in o]
 
 
