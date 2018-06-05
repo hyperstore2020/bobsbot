@@ -5,7 +5,7 @@ from discord.ext import commands
      # create bot instance
 bot = commands.Bot(command_prefix='!', description='BobsBot PornHub Comments Boy By Juji')
      # load file into json and data define
-o = json.load(open('d:/sd1bot/comments.json','r',encoding='utf-8-sig'))
+o = json.load(open('/root/bobsbot/comments.json','r',encoding='utf-8-sig'))
 data = [(m['username'],m['text']) for m in o]
 	 # load commands txt 
      # login
@@ -42,14 +42,14 @@ async def search(ctx, phrase : str):
 @bot.command(pass_context=True)
 async def commands(ctx):
     # Returns Commands
-     with open('root/commands.txt','r',encoding='utf-8-sig') as content_file:
+     with open('/root/bobsbot/commands.txt','r',encoding='utf-8-sig') as content_file:
           read = content_file.read()
      msg = "{}".format(read)
      await bot.say(msg)
 
 @bot.command(pass_context=True)
 async def katypasta(ctx):
-     with open('root/pasta/katypasta.txt','r',encoding='utf-8-sig') as content_file:
+     with open('/root/bobsbot/pasta/katypasta.txt','r',encoding='utf-8-sig') as content_file:
           read = content_file.read()
      msg = "{}".format(read)
      await bot.say(msg)
@@ -57,42 +57,42 @@ async def katypasta(ctx):
 
 @bot.command(pass_context=True)
 async def bakedpasta(ctx):
-     with open('root/pasta/bakedpasta.txt','r',encoding='utf-8-sig') as content_file:
+     with open('/root/bobsbot/pasta/bakedpasta.txt','r',encoding='utf-8-sig') as content_file:
           read = content_file.read()
      msg = "{}".format(read)
      await bot.say(msg)
 
 @bot.command(pass_context=True)
 async def spicipasta(ctx):
-     with open('root/pasta/spicipasta.txt','r',encoding='utf-8-sig') as content_file:
+     with open('/root/bobsbot/pasta/spicipasta.txt','r',encoding='utf-8-sig') as content_file:
           read = content_file.read()
      msg = "{}".format(read)
      await bot.say(msg)
 
 @bot.command(pass_context=True)
 async def pizzapasta(ctx):
-     with open('root/pasta/pizzapasta.txt','r',encoding='utf-8-sig') as content_file:
+     with open('/root/bobsbot/pasta/pizzapasta.txt','r',encoding='utf-8-sig') as content_file:
           read = content_file.read()
      msg = "{}".format(read)
      await bot.say(msg)
 
 @bot.command(pass_context=True)
 async def gamerpasta(ctx):
-     with open('root/pasta/gamerpasta.txt','r',encoding='utf-8-sig') as content_file:
+     with open('/root/bobsbot/pasta/gamerpasta.txt','r',encoding='utf-8-sig') as content_file:
           read = content_file.read()
      msg = "{}".format(read)
      await bot.say(msg)
 
 @bot.command(pass_context=True)
 async def usdpasta(ctx):
-     with open('root/pasta/usdpasta.txt','r',encoding='utf-8-sig') as content_file:
+     with open('/root/bobsbot/pasta/usdpasta.txt','r',encoding='utf-8-sig') as content_file:
           read = content_file.read()
      msg = "{}".format(read)
      await bot.say(msg)
 
 @bot.command(pass_context=True)
 async def wlipasta(ctx):
-     with open('root/pasta/wlipasta.txt','r',encoding='utf-8-sig') as content_file:
+     with open('/root/bobsbot/pasta/wlipasta.txt','r',encoding='utf-8-sig') as content_file:
           read = content_file.read()
      msg = "{}".format(read)
      await bot.say(msg)
@@ -382,6 +382,6 @@ async def whoisjessica():
     await bot.say(msg)    
 if __name__ == "__main__":
     try:
-        bot.run('TOKEN GOES HERE')
+        bot.run('NDMzODk2MjQ1MzI5Nzg4OTI4.DffpXQ.Qy7GtoTz8DUph3OJcqXqqSfLYKw')
     except:
         pass
