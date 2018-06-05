@@ -8,11 +8,15 @@ MAIN COMMANDS:
 
 !search *  -- Query And Return Up To Four Results From Pornhub.com Comments Full Dataset 
 
+OTHER COMMANDS
+
 !commands -- Displays this text
 
-!copypasta (coming soon) -- Random Copy Pasta 
+LIST OF PASTA COMMANDS 
 
-LIST OF !WHOIS COMMANDS:
+!bakedpasta !usdpasta !gamerpasta !katypasta !pizzapasta !wlipasta !spicipasta
+
+LIST OF WHOIS COMMANDS:
 
  !whoissyphor !whoiskaleena !whoishydro !whoislorea !whoisdax !whoisenraged
  !whoisgrim !whoismarza !whoisjeth !whoisdj !whoisolaf !whoisjulie
