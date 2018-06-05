@@ -22,6 +22,7 @@ async def porn(ctx):
     msg = "{}".format(text)
     await bot.say(msg)
 
+
 @bot.command(pass_context=True)
 async def search(ctx, phrase : str):
     # Match data with a search-phrase
@@ -40,13 +41,66 @@ async def search(ctx, phrase : str):
 
 @bot.command(pass_context=True)
 async def commands(ctx):
-    # Displays Commands
-     with open('d:/sd1bot/commands.txt','r',encoding='utf-8-sig') as content_file:
+    # Returns Commands
+     with open('root/commands.txt','r',encoding='utf-8-sig') as content_file:
           read = content_file.read()
      msg = "{}".format(read)
      await bot.say(msg)
 
-    # WhoIs Commands:
+@bot.command(pass_context=True)
+async def katypasta(ctx):
+     with open('root/pasta/katypasta.txt','r',encoding='utf-8-sig') as content_file:
+          read = content_file.read()
+     msg = "{}".format(read)
+     await bot.say(msg)
+   
+
+@bot.command(pass_context=True)
+async def bakedpasta(ctx):
+     with open('root/pasta/bakedpasta.txt','r',encoding='utf-8-sig') as content_file:
+          read = content_file.read()
+     msg = "{}".format(read)
+     await bot.say(msg)
+
+@bot.command(pass_context=True)
+async def spicipasta(ctx):
+     with open('root/pasta/spicipasta.txt','r',encoding='utf-8-sig') as content_file:
+          read = content_file.read()
+     msg = "{}".format(read)
+     await bot.say(msg)
+
+@bot.command(pass_context=True)
+async def pizzapasta(ctx):
+     with open('root/pasta/pizzapasta.txt','r',encoding='utf-8-sig') as content_file:
+          read = content_file.read()
+     msg = "{}".format(read)
+     await bot.say(msg)
+
+@bot.command(pass_context=True)
+async def gamerpasta(ctx):
+     with open('root/pasta/gamerpasta.txt','r',encoding='utf-8-sig') as content_file:
+          read = content_file.read()
+     msg = "{}".format(read)
+     await bot.say(msg)
+
+@bot.command(pass_context=True)
+async def usdpasta(ctx):
+     with open('root/pasta/usdpasta.txt','r',encoding='utf-8-sig') as content_file:
+          read = content_file.read()
+     msg = "{}".format(read)
+     await bot.say(msg)
+
+@bot.command(pass_context=True)
+async def wlipasta(ctx):
+     with open('root/pasta/wlipasta.txt','r',encoding='utf-8-sig') as content_file:
+          read = content_file.read()
+     msg = "{}".format(read)
+     await bot.say(msg)
+
+
+
+    # WhoIs Function
+
 @bot.command(pass_context=True)
 async def whoissyphor():
     msg = "Compulsive Hardchatter Who Is Probably Flying On Stims At Any Given Moment"
