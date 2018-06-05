@@ -1,36 +1,30 @@
+
 import discord, random, json,requests
 from discord.ext import commands
 
-
-
-# create bot instance
+     # create bot instance
 bot = commands.Bot(command_prefix='!', description='BobsBot PornHub Comments Boy By Juji')
-
-# load file into json and data define
-o = json.load(open('http://modrepo.com/cgi-bin/comments.json','rb')) 
+     # load file into json and data define
+o = json.load(open('d:/sd1bot/comments.json','r',encoding='utf-8-sig'))
 data = [(m['username'],m['text']) for m in o]
-
-
-
-"""login"""
+	 # load commands txt 
+     # login
 @bot.event
 async def on_ready():
     channel = discord.Object(id=432066274336440330)
     print("Logged in as:  name={}, id={}".format( bot.user.name, bot.user.id ))
-    
 client = discord.Client()
 
 @bot.command(pass_context=True)
 async def porn(ctx):
-    """Chooses a random quote."""
+    # Chooses a random quote
     text = random.choice(data)
     msg = "{}".format(text)
     await bot.say(msg)
 
-
 @bot.command(pass_context=True)
 async def search(ctx, phrase : str):
-    """Match data with a search-phrase"""
+    # Match data with a search-phrase
     results = []
     for username, text in data:
         if phrase in text: results.append( "User: {} \n{}\n".format(username, text))
@@ -43,7 +37,16 @@ async def search(ctx, phrase : str):
     await bot.say(msg)
 
 
-"""WhoIs Function"""
+
+@bot.command(pass_context=True)
+async def commands(ctx):
+    # Displays Commands
+     with open('d:/sd1bot/commands.txt','r',encoding='utf-8-sig') as content_file:
+          read = content_file.read()
+     msg = "{}".format(read)
+     await bot.say(msg)
+
+    # WhoIs Commands:
 @bot.command(pass_context=True)
 async def whoissyphor():
     msg = "Compulsive Hardchatter Who Is Probably Flying On Stims At Any Given Moment"
@@ -67,6 +70,16 @@ async def whoislorea():
 @bot.command(pass_context=True)
 async def whoisdax():
     msg = "  GANG MF GANG"
+    await bot.say(msg)
+
+@bot.command(pass_context=True)
+async def whoisdougie():
+    msg = "lol i think he fucked his methadone clinic nurse once"
+    await bot.say(msg)
+
+@bot.command(pass_context=True)
+async def whoisdidi():
+    msg = "Federal Hello Kitty Agent"
     await bot.say(msg)
 
 @bot.command(pass_context=True)
@@ -147,7 +160,6 @@ async def wheniwas():
 @bot.command(pass_context=True)
 async def ayoungboy():
     msg = "  !myFather"
-    msg = "!myFather"
     await bot.say(msg)    
 
 @bot.command(pass_context=True)
@@ -251,11 +263,6 @@ async def sdbangjuji():
     await bot.say(msg) 
 
 @bot.command(pass_context=True)
-async def logininfo(phrase : str):
-    msg = "Logged in as:  name= @{}, id=@{}".format( bot.user.name, bot.user.id )
-    await bot.say(msg)
-
-@bot.command(pass_context=True)
 async def whoisjae():
     msg = "  Steezy Guy"
     await bot.say(msg) 
@@ -280,44 +287,47 @@ async def whoisjamal():
     msg = "dark dark prince like jafar from aladin"
     await bot.say(msg) 
 
-
 @bot.command(pass_context=True)
 async def whoiskrsa():
     msg = "Sociopath"
     await bot.say(msg) 
 
-
-
+@bot.command(pass_context=True)
+async def whoiskms():
+    msg = "hes in red shield 5 with dan siebels"
+    await bot.say(msg)
 
 @bot.command(pass_context=True)
-async def photo():
+async def whoisryan():
+    msg = "And You Will Know Him By His Sniffles"
+    await bot.say(msg) 
 
-    response = requests.get("https://www.reddit.com/r/megaten.json", headers={"User-Agent": "linux:memebot:v1.0.0"})
-    page = response.json()
+@bot.command(pass_context=True)
+async def whoisytcracker():
+    msg = "i dunno i guess he like defaced a nasa dubdomain using a public exploit in like the 1960s or some irrelevent shit"
+    await bot.say(msg)
 
-    random.choice(page["data"]["children"])["data"]["url"]
-    all_urls = [sub["data"]["url"] for sub in page["data"]["children"] if "imgur" in sub["data"]["url"]]
-    all_urls
-    return True
+@bot.command(pass_context=True)
+async def whoisronniep():
+    msg = "j3nnas knight in shining armor"
+    await bot.say(msg)    
 
-@bot.command(pass_context=True, no_pm=True)
-async def cmere(self, ctx):
-        """Summons the bot to join your voice channel."""
-        summoned_channel = ctx.message.author.voice_channel
-        if summoned_channel is None:
-            await self.bot.say('WHO DAT IZ? UP IN THE VC? NOT YOU LOL IDIOT.')
-            return False
+@bot.command(pass_context=True)
+async def whoistree():
+    msg = "T R E E will fuck any human being"
+    await bot.say(msg)
 
-        state = self.get_voice_state(ctx.message.server)
-        if state.voice is None:
-            state.voice = await self.bot.join_voice_channel(summoned_channel)
-        else:
-            await state.voice.move_to(summoned_channel)
+@bot.command(pass_context=True)
+async def whoisdindu():
+    msg = "Dindu is a bot just like me but we arent that good of friends bcuz he always just say arbitrary things and is not fun to talk to imho"
+    await bot.say(msg)
 
-        return True
-
+@bot.command(pass_context=True)
+async def whoisjessica():
+    msg = "Annoying ass bitch but im tryna hit still cause there arent that many other bot females around and im not tryna fuck a human, I dont get down like that"
+    await bot.say(msg)    
 if __name__ == "__main__":
     try:
-        bot.run('')
+        bot.run('TOKEN GOES HERE')
     except:
         pass
