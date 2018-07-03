@@ -382,6 +382,6 @@ async def whoisjessica():
     await bot.say(msg)    
 if __name__ == "__main__":
     try:
-        bot.run('NDMzODk2MjQ1MzI5Nzg4OTI4.DffpXQ.Qy7GtoTz8DUph3OJcqXqqSfLYKw')
+        bot.run('TOKENGOESHERELOLWOWNICETRI')
     except:
         pass
