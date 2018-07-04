@@ -22,6 +22,12 @@ async def porn(ctx):
     msg = "{}".format(text)
     await bot.say(msg)
 
+@bot.command(pass_context=True)
+async def multiporn(ctx, n: int = 1):
+    """Chooses a random quote."""
+    msg = ["{}".format(text) for text in [random.choice(data) for _ in range(0,n)]]
+    await bot.say('\n'.join(msg))
+
 
 @bot.command(pass_context=True)
 async def search(ctx, phrase : str):
@@ -184,6 +190,46 @@ async def whoisrin():
 @bot.command(pass_context=True)
 async def whoisjuji():
     msg = "  Soft Boy Kisser"
+    await bot.say(msg) 
+
+@bot.command(pass_context=True)
+async def whoisesgrima():
+    msg = "ios dev and hero of the 1131 read only netcat shell scene"
+    await bot.say(msg) 
+
+@bot.command(pass_context=True)
+async def whoismystery():
+    msg = "elite d0xer"
+    await bot.say(msg)
+
+@bot.command(pass_context=True)
+async def whoisdaniel():
+    msg = "V Sad Weeb"
+    await bot.say(msg) 
+
+@bot.command(pass_context=True)
+async def whoisxull():
+    msg = "Authority On Preboot Asus Recovery Keys"
+    await bot.say(msg) 
+
+@bot.command(pass_context=True)
+async def whoisnomad():
+    msg = "3 out of 3 (needs more wing in eyeliner"
+    await bot.say(msg) 
+
+@bot.command(pass_context=True)
+async def whois():
+    msg = "V Sad Weeb"
+    await bot.say(msg) 
+
+@bot.command(pass_context=True)
+async def whatisrslashjailbreak():
+    msg = "Anti Piracy Coolstar Dick Sucking Squad"
+    await bot.say(msg) 
+
+@bot.command(pass_context=True)
+async def whoisreverseengineer():
+    msg = "Chinese Sweatshop Owner"
     await bot.say(msg) 
 
 @bot.command(pass_context=True)
@@ -382,6 +428,6 @@ async def whoisjessica():
     await bot.say(msg)    
 if __name__ == "__main__":
     try:
-        bot.run('TOKENGOESHERELOLWOWNICETRI')
+        bot.run('NDMzODk2MjQ1MzI5Nzg4OTI4.Dh6gLg.ZX_MmcyqObbOVPXBPuHIPw3D4ME')
     except:
         pass
