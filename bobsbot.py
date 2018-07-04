@@ -428,6 +428,6 @@ async def whoisjessica():
     await bot.say(msg)    
 if __name__ == "__main__":
     try:
-        bot.run('NDMzODk2MjQ1MzI5Nzg4OTI4.Dh6gLg.ZX_MmcyqObbOVPXBPuHIPw3D4ME')
+        bot.run('tokengoeshere')
     except:
         pass
