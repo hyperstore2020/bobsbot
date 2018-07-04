@@ -35,7 +35,7 @@ async def search(ctx, phrase : str):
     results = []
     for username, text in data:
         if phrase in text: results.append( "User: {} \n{}\n".format(username, text))
-        if len(results) > 3: break
+        if len(results) > 8: break
 
     if len(results) > 0:
         msg = "\n\n {}".format( "\n".join(results) )
