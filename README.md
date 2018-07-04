@@ -18,7 +18,9 @@ MAIN COMMANDS:
 
 !porn -- Returns A Random Comment From Pornhub.com 
 
-!search *  -- Query And Return Up To Four Results From Pornhub.com Comments Full Dataset 
+!multiporn * -- Return A Specified Amount Of Comments
+
+!search *  -- Query And Return Up To 10 Results From Pornhub.com Comments Full Dataset 
 
 OTHER COMMANDS
 
@@ -35,7 +37,8 @@ LIST OF !WHOIS COMMANDS:
  !whoisjames !whoisnt !whoisyarp !whoissd !whoiskayla !whoiskayos
  !whoisheather !whoislavos !whoiskrazy !whoismai !whoisjae !whoisgary
  !whoisd0ct0r !whoisjamal !whoiskrsa !whoisryan !whoisdidi !whoisdougie
- !whoisdindu !whoisjessica !whoistree
+ !whoisdindu !whoisjessica !whoistree !whoisreverseengeneer !whoisxull !whoisnomad
+ !whoismystery !whoisesgrima
 
 SECRET COMMANDS: 
 
