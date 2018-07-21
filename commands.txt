@@ -1,4 +1,6 @@
 
+
+
 BOBSBOT COMMAND LIST ----
 
 MAIN COMMANDS: 
@@ -9,12 +11,12 @@ MAIN COMMANDS:
 
 !search *  -- Query And Return Up To 10 Results From Pornhub.com Comments Full Dataset 
 
-OTHER COMMANDS
-
 !commands -- Displays this text
 
-!copypasta (coming soon) -- Random Copy Pasta 
 
+AUTOMATED FEATURES ----
+
+-- Hourly Random Comments
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
